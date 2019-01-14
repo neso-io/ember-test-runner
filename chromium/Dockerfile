@@ -13,8 +13,8 @@ RUN apt-get update && apt-get install -y \
 
 RUN Xvfb :10 -screen 0 1280x720x16 &
 
-RUN curl -O http://security.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-chromedriver_61.0.3163.100-0ubuntu1.1378_amd64.deb \
-	&& dpkg -i --force-depends chromium-chromedriver_61.0.3163.100-0ubuntu1.1378_amd64.deb \
+RUN curl -O http://security.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/chromium-browser_71.0.3578.98-0ubuntu1_amd64.deb \
+	&& dpkg -i --force-depends chromium-browser_71.0.3578.98-0ubuntu1_amd64.deb \
 	&& apt-get update \
 	&& apt-get install -f -y
 
