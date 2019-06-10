@@ -18,7 +18,7 @@ RUN curl -O http://security.ubuntu.com/ubuntu/pool/universe/c/chromium-browser/c
 	&& apt-get update \
 	&& apt-get install -f -y
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && apt-get update && apt-get install -y nodejs
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - && apt-get update && apt-get install -y nodejs
 
 RUN npm install -g ember-cli
 
